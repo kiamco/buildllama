@@ -4,6 +4,7 @@ import {primaryBtn} from './styles/templates'
 import Image from 'next/image'
 import {bgcolor} from './styles/colors'
 import Link from 'next/link'
+import Fade from './FadeInWhenVisible'
 
 
 const useStyles = makeStyles({
@@ -53,6 +54,7 @@ const Pointers = () => {
     return (
         <Box className={classes.container}>
             <Typography className={classes.subheader} variant='h4'>Sub headline that user might want to read or maybe logos of websites we have built</Typography>
+            <Fade>
             <Box className={classes.section}>
                 <Box className={classes.left}>
                     <Image src='/sectionImg1.svg' height='350px' width='350px'/>
@@ -62,6 +64,8 @@ const Pointers = () => {
                     <Typography className={classes.desc} variant='subtitle1'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print.</Typography>
                 </Box>
             </Box>
+            </Fade>
+            <Fade>
             <Box className={classes.section} style={{flexDirection:"row-reverse"}}>
             <Box className={classes.left}>
                     <Image src='/sectionImg2.svg' height='350px' width='350px'/>
@@ -71,6 +75,8 @@ const Pointers = () => {
                     <Typography className={classes.desc} variant='subtitle1'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print.</Typography>
                 </Box>
             </Box>
+            </Fade>
+            <Fade>
             <Box className={classes.section}>
             <Box className={classes.left}>
                     <Image src='/sectionImg3.svg' height='350px' width='350px'/>
@@ -83,6 +89,7 @@ const Pointers = () => {
                     </Link>
                 </Box>
             </Box>
+            </Fade>
         </Box>
     )
 

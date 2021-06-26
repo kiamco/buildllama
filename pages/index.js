@@ -3,12 +3,13 @@ import Billboard from '../src//billboard'
 import Pointers from '../src/sections'
 import Footer from '../src/footer'
 
+
 const Home = () => {
     return (
         <>
         <Nav />
         <Billboard />
-        <Pointers />
+        <Pointers />        
         <Footer />
         </>
     )
