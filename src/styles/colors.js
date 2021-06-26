@@ -1,0 +1,5 @@
+export const mainColor = "black"
+export const secondaryColor = "white"
+export const textColor = "black"
+export const bgcolor = "beige"
+export const subcolor = "#FFE8AC"
